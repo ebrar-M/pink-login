@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pink Login + Eye Follow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="wrap">
+
+    <!-- LEFT: Illustration -->
+    <section class="left">
+      <div class="scene" id="scene" aria-hidden="true">
+
+        <div class="blob tall1 parallax" data-depth="0.10">
+          <div class="eyes">
+            <div class="eye"><div class="pupil"></div><div class="lid"></div></div>
+            <div class="eye"><div class="pupil"></div><div class="lid"></div></div>
+          </div>
+        </div>
+
+        <div class="blob tall2 parallax" data-depth="0.14">
+          <div class="eyes">
+            <div class="eye"><div class="pupil"></div><div class="lid"></div></div>
+            <div class="eye"><div class="pupil"></div><div class="lid"></div></div>
+          </div>
+        </div>
+
+        <div class="blob round parallax" data-depth="0.08">
+          <div class="eyes">
+            <div class="eye"><div class="pupil"></div><div class="lid"></div></div>
+            <div class="eye"><div class="pupil"></div><div class="lid"></div></div>
+          </div>
+          <div class="smile"></div>
+        </div>
+
+        <div class="blob pill parallax" data-depth="0.12">
+          <div class="eyes">
+            <div class="eye"><div class="pupil"></div><div class="lid"></div></div>
+            <div class="eye"><div class="pupil"></div><div class="lid"></div></div>
+          </div>
+          <div class="nose"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RIGHT: Login -->
+    <section class="right">
+      <form class="form" id="loginForm" autocomplete="on">
+
+        <div class="brandMark" aria-hidden="true"></div>
+
+        <h1>Welcome back!</h1>
+        <div class="sub">Please enter your details</div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <div class="inputRow">
+            <input id="email" type="email" placeholder="name@domain.com" autocomplete="email" />
+            <span class="hint" id="emailHint"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="inputRow">
+            <input id="password" type="password" autocomplete="current-password" minlength="6" />
+            <button class="iconBtn" type="button" id="togglePw" aria-label="Show password">👁️</button>
+          </div>
+          <div class="error" id="pwError"></div>
+        </div>
+
+        <div class="row">
+          <label class="check">
+            <input type="checkbox" />
+            <span>Remember for 30 days</span>
+          </label>
+
+          <a class="link" href="#">Forgot password?</a>
+        </div>
+
+        <button class="btn" id="loginBtn" type="submit">Log in</button>
+
+        <button class="google" type="button">
+          <span class="g">G</span>
+          <span>Log in with Google</span>
+        </button>
+
+        <div class="footer">
+          Don’t have an account? <a class="link" href="#">Sign up</a>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
